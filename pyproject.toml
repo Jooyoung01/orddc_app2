@@ -3,6 +3,8 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
+dynamic = ["version"]
+name = "orddc-app2"
 dependencies = [
         'beautifulsoup4==4.12.3',
         'certifi==2024.7.4',
