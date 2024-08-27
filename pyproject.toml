@@ -1,12 +1,9 @@
-from setuptools import setup, find_packages
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
 
-setup(
-    name='orddc_app2',
-    version='0.1.0',
-    url='',
-    description='',
-    packages=find_packages(),
-    install_requires=[
+[project]
+dependencies = [
         'beautifulsoup4==4.12.3',
         'certifi==2024.7.4',
         'charset-normalizer==3.3.2',
@@ -57,8 +54,7 @@ setup(
         'ultralytics==8.2.79',
         'ultralytics-thop==2.0.5',
         'urllib3==2.2.2',
-    ],
-    dependency_links=[
-        'git+https://github.com/Jooyoung01/orddc_app2.git#egg=orddc_app2'
-    ]
-)
+]
+
+#[project.optional-dependencies]
+#dev = ['ExtraExample @ git+ssh://git@github.com/example_org/ExtraExample.git']
