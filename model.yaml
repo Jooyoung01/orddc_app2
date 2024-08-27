@@ -1,0 +1,33 @@
+models:
+  yolov8:
+    - weight: './models/v8s_32_125.pt'
+      img_size: 640
+      conf: 0.25
+      iou: 0.999
+      agnostic_nms: True
+      augment: True
+      #10
+    - weight: './models/v10s_125.pt'
+      img_size: 640
+      conf: 0.25
+      iou: 0.999
+      agnostic_nms: True
+      augment: True
+
+  yolov5:
+    - weight: './models/v5s_best.pt'
+      img_size: 640
+      conf: 0.25
+      iou: 0.999
+      agnostic_nms: True
+      augment: True
+
+  # yolox:
+    # - weight: './models/yolox/epoch_125_ckpt.pth'
+    #   conf: 0.25
+    #   iou: 0.99
+    #   imgsz: 640
+    #   exp_file: './models/yolox/yolox_voc_m.py'
+      
+# images_path: './src/data/test/smaller'
+# output_csv: './predictions.csv'
