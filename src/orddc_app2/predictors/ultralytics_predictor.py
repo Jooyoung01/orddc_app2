@@ -42,7 +42,7 @@ class UltralyticsPredictor(Predictor):
         # print("batch_labels:", batch_labels)
         return batch_boxes, batch_scores, batch_labels
 
-    def predict(self, batch_size=32):
+    def predict(self, batch_size=128):
         boxes_list = []
         scores_list = []
         labels_list = []
